@@ -1,0 +1,85 @@
+/* src/components/Modal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker background for better focus */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #ffffff; /* Pure white background for clarity */
+    padding: 30px; /* More padding for a spacious look */
+    border-radius: 12px; /* Smooth corners */
+    max-width: 400px; /* Slightly narrower for better focus */
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333; /* Dark grey color for the close button */
+  }
+  
+  .form input {
+    width: 92%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light grey border for input fields */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem;
+    color: #333; /* Dark grey text color */
+  }
+  
+  .form input:focus {
+    border-color: #007BFF; /* Blue border on focus for accessibility */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+  }
+  
+  .form button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 4%; /* Spacing between buttons */
+  }
+  
+  .form button:last-child {
+    margin-right: 0;
+  }
+  
+  .form button:first-child {
+    background-color: #007BFF; /* Primary blue button */
+    color: white;
+  }
+  
+  .form button:first-child:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .form button:last-child {
+    background-color: #6c757d; /* Secondary grey button */
+    color: white;
+  }
+  
+  .form button:last-child:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+  }
+  
